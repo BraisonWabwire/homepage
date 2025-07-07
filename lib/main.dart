@@ -10,7 +10,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        padding: EdgeInsets.symmetric(vertical: 30),
+        padding: EdgeInsets.symmetric(vertical: 10),
         width: double.infinity,
         decoration: BoxDecoration(
           gradient: LinearGradient(
@@ -75,15 +75,14 @@ class HomePage extends StatelessWidget {
                               padding: EdgeInsets.all(10),
                               decoration: BoxDecoration(
                                 border: Border(
-                                  bottom: BorderSide(color: Colors.grey[200]!)
+                                  bottom: BorderSide(color: Colors.grey[200]!),
                                 ),
                               ),
                               child: TextField(
                                 decoration: InputDecoration(
                                   hintText: "Email or Phone number",
                                   hintStyle: TextStyle(color: Colors.grey),
-                                  border: InputBorder.none
-
+                                  border: InputBorder.none,
                                 ),
                               ),
                             ),
@@ -91,24 +90,24 @@ class HomePage extends StatelessWidget {
                               padding: EdgeInsets.all(10),
                               decoration: BoxDecoration(
                                 border: Border(
-                                  bottom: BorderSide(color: Colors.grey)
+                                  bottom: BorderSide(color: Colors.grey),
                                 ),
                               ),
                               child: TextField(
                                 decoration: InputDecoration(
                                   hintText: "password",
                                   hintStyle: TextStyle(color: Colors.grey),
-                                  border: InputBorder.none
-
+                                  border: InputBorder.none,
                                 ),
                               ),
                             ),
                           ],
                         ),
                       ),
-                      SizedBox(height: 40,),
-                      Text("Forgot password?", style: TextStyle(color: Colors.grey),),
-                      SizedBox(height: 40,),
+                      SizedBox(height: 40),
+                      Text("Forgot password?",style: TextStyle(color: Colors.grey),
+                      ),
+                      SizedBox(height: 40),
                       Container(
                         height: 50,
                         margin: EdgeInsets.symmetric(horizontal: 50),
@@ -116,9 +115,44 @@ class HomePage extends StatelessWidget {
                           borderRadius: BorderRadius.circular(50),
                           color: Colors.orange[900],
                         ),
-                        child: Text("Login",style: TextStyle(color: Colors.white, fontSize: 15),
-                      )
-                      )
+                        child: Center(
+                          child: Text("Login",style: TextStyle(color: Colors.white,fontSize: 15,fontWeight: FontWeight.bold,),
+                          ),
+                        ),
+                      ),
+                      SizedBox(height: 30),
+                      Text("Continue with social media",style: TextStyle(color: Colors.grey),),
+                      SizedBox(height: 30),
+                      Row(
+                        children: <Widget>[
+                          Expanded(
+                            child: Container(
+                              height: 50,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(50),
+                                color: Colors.blue,
+                              ),
+                              child: Center(
+                                child: Text("Facebook",style: TextStyle(color: Colors.white,fontSize: 15,fontWeight: FontWeight.bold,),),
+                              ),
+                            ),
+                          ),
+
+                          SizedBox(width: 30,),
+                          Expanded(
+                            child: Container(
+                              height: 50,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(50),
+                                color: Colors.black,
+                              ),
+                               child: Center(
+                                child: Text("Github",style: TextStyle(color: Colors.white,fontSize: 15,fontWeight: FontWeight.bold,),),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
                     ],
                   ),
                 ),
