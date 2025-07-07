@@ -1,16 +1,39 @@
-# homepage
+# 🟠 Flutter Login UI
 
-A new Flutter project.
+A clean and modern login screen built using **Flutter**, showcasing layout, styling, and UI composition techniques such as gradients, containers, text fields, and social login buttons.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## ✨ Features
 
-A few resources to get you started if this is your first Flutter project:
+- 🔶 Stylish orange gradient background
+- 📢 Welcome message with header text
+- 📩 Input fields for **email/phone** and **password**
+- 🔒 “Forgot password?” support text
+- 🟠 Rounded **Login** button
+- 🔵 Facebook and ⚫ GitHub social login buttons
+- 📱 Responsive and clean layout using `Column` and `Expanded`
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 📸 Screenshots
+
+> *(You can add screenshots here later to show the UI)*
+
+---
+
+## 🧱 Built With
+
+- [Flutter](https://flutter.dev/) – UI toolkit for building natively compiled mobile apps
+- [Dart](https://dart.dev/) – Programming language optimized for UI
+
+---
+
+## 🚀 Getting Started
+
+### ✅ Prerequisites
+
+Make sure Flutter is installed and properly set up:
+
+```bash
+flutter doctor
